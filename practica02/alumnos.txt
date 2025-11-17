@@ -1,0 +1,1 @@
+Matricula: 64862, Nombre: Sergio, Apellido: Gonzalez, Carrera: SISTEMAS, Semestre: 7, Promedio: 8.5, Estado: ACTIVO, Genero: MASCULINO, Correo: al064862@uacam.mx

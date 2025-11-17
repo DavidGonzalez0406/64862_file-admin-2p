@@ -1,0 +1,63 @@
+{
+  "title": "Students",
+  "description": "Esquema del archivo JSON que almacena los datos de los estudiantes.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "idStudent": {
+        "type": "integer",
+        "description": "Identificador único del estudiante."
+      },
+      "name": {
+        "type": "string",
+        "description": "Nombre del estudiante."
+      },
+      "lastName": {
+        "type": "string",
+        "description": "Apellido del estudiante."
+      },
+      "degree": {
+        "type": "string",
+        "enum": ["SISTEMAS", "INDUSTRIAL", "CIVIL", "ARQUITECTURA", "MECATRONICA"],
+        "description": "Carrera o licenciatura del alumno."
+      },
+      "semester": {
+        "type": ["string", "integer"],
+        "description": "Semestre actual del estudiante."
+      },
+      "promedio": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 10,
+        "description": "Promedio general del estudiante."
+      },
+      "estado": {
+        "type": "string",
+        "enum": ["ACTIVO", "INACTIVO", "SUSPENDIDO"],
+        "description": "Estado actual del alumno."
+      },
+      "genero": {
+        "type": "string",
+        "enum": ["MASCULINO", "FEMENINO", "OTRO"],
+        "description": "Género del estudiante."
+      },
+      "correo": {
+        "type": "string",
+        "format": "email",
+        "description": "Correo electrónico del estudiante."
+      }
+    },
+    "required": [
+      "idStudent",
+      "name",
+      "lastName",
+      "degree",
+      "semester",
+      "promedio",
+      "estado",
+      "genero",
+      "correo"
+    ]
+  }
+}
